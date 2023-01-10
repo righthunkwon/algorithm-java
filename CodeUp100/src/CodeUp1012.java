@@ -5,7 +5,6 @@ public class CodeUp1012 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		
-		System.out.print("실수 입력 : ");
 		float x = scan.nextFloat();
 		System.out.printf("%f", x);
 	}

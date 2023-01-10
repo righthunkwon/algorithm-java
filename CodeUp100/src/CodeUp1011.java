@@ -8,7 +8,6 @@ public class CodeUp1011 {
 		// Scanner는 문자를 입력받는 기능이 없다(문자열만 가능).
 		// String 에서 char로 casting 할 수 없다. --->  char letter = (char)input; 불가능
 			
-		System.out.print("문자 입력 : ");
 		String input = scan.next();
 		char letter = input.charAt(0);
 		System.out.printf("%c", letter);
