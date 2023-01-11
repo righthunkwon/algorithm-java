@@ -7,3 +7,5 @@ public class CodeUp1002 {
 	}
 
 }
+
+//test
