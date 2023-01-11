@@ -41,7 +41,9 @@ public class CodeUp1019 {
 					
 					
 			Integer	: int의 래퍼 클래스(wrapper class)
-					: 매개변수로 객체를 필요로 할 때, 기본형 값이 아닌 객체로 저장해야할 때, 객체 간 비교가 필요할 때 사용
+					: 1. 매개변수로 객체를 필요로 할 때, 
+					: 2. 기본형 값이 아닌 객체로 저장해야할 때, 
+					: 3. 객체 간 비교가 필요할 때 사용
 					: 언박싱하지 않을 시 산술 연산이 불가, null값 처리 가능
 					
 						cf) Boxing		: primitive type ->	wrapper class 변환 (int to Integer)
@@ -78,21 +80,6 @@ public class CodeUp1019 {
 			객체를 String 객체로 형변환 시켜준다.
 
 	*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
