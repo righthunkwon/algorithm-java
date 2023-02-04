@@ -1,4 +1,4 @@
-package basic;
+package level_1;
 
 public class P_10171 {
 
@@ -7,7 +7,6 @@ public class P_10171 {
 		System.out.println(" )  ( ')");
 		System.out.println("(  /  )");
 		System.out.println(" \\(__)|");
-		
 	}
 
 }
