@@ -15,7 +15,7 @@ public class P_11021 {
 		
 		int n = Integer.parseInt(br.readLine());
 		
-		StringTokenizer st;
+		StringTokenizer st; 
 		
 		for(int i=1; i<=n; i++) {
 			st = new StringTokenizer(br.readLine(), " ");
