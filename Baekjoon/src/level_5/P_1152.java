@@ -7,9 +7,13 @@ public class P_1152 {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
 		String str = scan.nextLine();
-		String trimStr = str.strip(); // 양쪽 공백을 삭제한 str을 trimStr에 담아야 한다.
-		String[] arr = trimStr.split(" ");
-		System.out.println(arr.length);
+		str = str.trim(); // 양쪽 공백을 삭제한 str을 str에 다시 담는다.
+		if(!str.isEmpty()) {
+			String[] num = str.split(" ");
+			System.out.println(num.length);
+		} else {
+			System.out.println(0);
+		}
 	}
 /*
 	StringTokenizer
