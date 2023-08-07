@@ -2,7 +2,7 @@ package level_13_sort;
 
 import java.util.Scanner;
 
-public class P_2750 {
+public class P_2750_1 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int n = sc.nextInt();
