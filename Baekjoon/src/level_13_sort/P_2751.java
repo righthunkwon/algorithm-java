@@ -15,12 +15,19 @@ public class P_2751 {
 
 		// 해결책
 		// Collections.sort()
-		//		: 합병 및 삽입정렬(hybrid sorting algorithm) (시간복잡도: O(n) ~ O(n log n)) 
+		//		: 합병 및 삽입정렬(hybrid sorting algorithm) (시간복잡도: O(n log n)) 
 		//		: 단, List 계열 자료구조 활용 권장
 		//		: Scanner로 입력받아도 되지만, 
 		//		  출력은 BufferedWriter를 활용하든지, StringBuilder를 통해 한 번에 출력해야 시간 초과가 나지 않는다.
 		
-		// 참고 지식
+		// 참고 지식 (1)
+		// Arrays.sort() vs Collections.sort()
+		// Arrays.sort()와 Collections.sort()는 정렬방식에서 차이를 보이기에 이 둘은 시간 복잡도가 다르다.
+		// Arrays.sort()의 경우에는 Dual Pivot Quick Sort 방식을 사용하고 시간복잡도는 평균 O(n log n)에서 최악 O(n^2))인데 반해,
+		// Collections.sort()의 경우에는 Time Sort 방식으로 삽입정렬과 합병정렬을 결합한 정렬로 평균과 최악 모두 O(n log n)의 시간복잡도를 가져
+		// Arrays.sort()보다 일반적으로 빠르다.
+		
+		// 참고 지식 (2)
 		// StringBuilder를 사용하는 이유
 		// 		: 문자열을 합치는 코드 예시
 		// 		: String str1 = "싸피생은 ";
