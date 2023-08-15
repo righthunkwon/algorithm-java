@@ -12,7 +12,8 @@ public class P_2751 {
 		// (1) Bubble sort : 시간 초과 (시간복잡도: O(n^2))
 		// (2) Arrays.sort : 시간 초과 (시간복잡도: O(n log n) ~ O(n^2))
 		// (3) Bubble sort & BufferedReader : 시간 초과 (시간복잡도: O(n^2))
-
+		// O(1) O(log n) O(n) O(n log n) O(n^2)
+		
 		// 해결책
 		// Collections.sort()
 		//		: 합병 및 삽입정렬(hybrid sorting algorithm) (시간복잡도: O(n log n)) 
@@ -32,7 +33,7 @@ public class P_2751 {
 		// 		: 문자열을 합치는 코드 예시
 		// 		: String str1 = "싸피생은 ";
 		// 		: String str2 = "배고프다.";
-		// 		: String result = str1 + srt2;
+		// 		: String result = str1 + str2;
 		//		: System.out.println(result); => 싸피생은 배고프다.
 		//		: 이 과정에서 str1, str2는 GC가 처리하고, result라는 새로운 String 객체가 생성된다.
 		
