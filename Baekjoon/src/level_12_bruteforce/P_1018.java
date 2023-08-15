@@ -1,32 +1,61 @@
 package level_12_bruteforce;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class P_1018 {
-	public static void main(String[] args) {
+	public static void main(String args[]) {
 		Scanner sc = new Scanner(System.in);
-		int n = sc.nextInt();
-		int m = sc.nextInt();
-		
-		// 전체 배열 입력
-		String[] sarr = new String[n];
-		char[][] carr = new char[n][m];
+		int n = sc.nextInt(); // 열
+		int m = sc.nextInt(); // 행
+
+		// 체스판 입력
+		String board[] = new String[n];
 		for (int i = 0; i < n; i++) {
-			sarr[i] = sc.next();
-		}
-		for (int i = 0; i < n; i++) {
-			carr[i] = sarr[i].toCharArray();
+			board[i] = sc.next();
 		}
 
-		// 체스판 자르기
-		// 전체 체스판 크기 = 검은 체스판 최소비용 + 흰 체스판 최소비용
-		for (int i = 0; i < n - 8; i++) {
-			for (int j = 0; j < m - 8; j++) {
-				// 현 체스판의 최소 비용 구하기
-				
-				// 전체 최적 값과 비교 후 갱신
+		int min = 1000000000;
+		int cnt1; // WBW
+		int cnt2; // BWB
+
+		// 체스판은 8*8 사이즈이므로 배열 범위를 끝까지 순회할 필요가 없음
+		for (int i = 0; i < n - 7; i++)
+			for (int j = 0; j < m - 7; j++) {
+				cnt1 = 0;
+				cnt2 = 0;
+
+				// 해당 영역을 체스판으로 만들기 위한 수정 횟수 탐색
+				for (int p = i; p < i + 8; p++)
+					for (int q = j; q < j + 8; q++) {
+						if (p % 2 == 0) {
+							if (q % 2 == 0) {
+								if (board[p].charAt(q) == 'W')
+									cnt1++;
+								else
+									cnt2++;
+							} else {
+								if (board[p].charAt(q) == 'B')
+									cnt1++;
+								else
+									cnt2++;
+							}
+						} else {
+							if (q % 2 == 0) {
+								if (board[p].charAt(q) == 'B')
+									cnt1++;
+								else
+									cnt2++;
+							} else {
+								if (board[p].charAt(q) == 'W')
+									cnt1++;
+								else
+									cnt2++;
+							}
+						}
+					}
+				min = Math.min(min, Math.min(cnt1, cnt2)); // 최소 수정 횟수 저장
 			}
-		}
+		// 모든 경우의 최소 수정 횟수 출력
+		System.out.println(min); 
 	}
 }
