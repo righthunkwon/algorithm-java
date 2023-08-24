@@ -12,7 +12,6 @@ public class P_17252 {
 			System.out.println("NO");
 		}
 	}
-
 	private static boolean isSamSam(int n) {
 		// 문제에서 삼삼한 수는 3의 거듭제곱인 수를 반드시 하나 이상
 		// 포함해야 한다고 했으므로, n = 0일 경우 삼삼한 수가 아니라고 판단

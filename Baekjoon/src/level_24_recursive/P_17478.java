@@ -1,4 +1,4 @@
-package recursive;
+package level_24_recursive;
 import java.util.Scanner;
 
 public class P_17478 {
