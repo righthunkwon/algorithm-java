@@ -35,13 +35,13 @@ public class P_2805 {
 		// 요구되는 나무의 길이보다 얻을 수 있는 나무의 길이가 짧다면 절단기의 높이를 낮춘다(end = mid - 1)
 		// 반복문이 종료되면 최대 높이를 출력한다.
 
-		int st = 0; // 시작점
-		int ed = arr[arr.length - 1]; // 종료점
+		int st = 0; // 절단기의 시작점
+		int ed = arr[arr.length - 1]; // 절단기의 종료점
 		int ans = 0; // 정답(절단기의 최대 높이)
 
 		while (st <= ed) {
 			int mid = (st + ed) / 2; // 중간점
-			long sum = 0; // 나무들의 높이 합(나무의 길이가 최대 10억이므로 long으로 선언)
+			long sum = 0; // 나무들의 높이 합(나무의 길이가 최대 10억이므로 그 합은 long으로 선언)
 
 			// 나무의 길이만큼 반복
 			for (int i = 0; i < arr.length; i++) {
