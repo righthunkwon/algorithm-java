@@ -1,4 +1,4 @@
-package level_07_multi_array;
+package level_07_array_2;
 
 import java.util.Scanner;
 
