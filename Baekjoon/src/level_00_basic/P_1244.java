@@ -1,4 +1,4 @@
-package level_00_not_classified;
+package level_00_basic;
 import java.util.Scanner;
 
 public class P_1244 {
