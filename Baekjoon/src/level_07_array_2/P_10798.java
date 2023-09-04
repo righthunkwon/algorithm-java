@@ -1,6 +1,5 @@
 package level_07_array_2;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class P_10798 {
@@ -20,6 +19,7 @@ public class P_10798 {
 		
 		for (int i = 0; i < 15; i++) {
 			for (int j = 0; j < 15; j++) {
+				// 문자의 초기값은 \u0000(null)이다.
 				if (carr[j][i] == '\u0000') {
 					continue;
 				}
