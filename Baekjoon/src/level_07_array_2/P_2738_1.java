@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import org.w3c.dom.ls.LSOutput;
 
-public class P_2738 {
+public class P_2738_1 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int N = sc.nextInt();
