@@ -35,7 +35,7 @@ import java.util.StringTokenizer;
  *       . . .
  * 
  * 1 1 1 1 1 1 1 1 1 1 (전체집합)
- * ***********************
+ * 
  * ***********************
  * 공집합		: A = 0
  * 전체집합	: A = (1 << 10) - 1
@@ -85,7 +85,7 @@ import java.util.StringTokenizer;
 
 // 기차가 어둠을 헤치고 은하수를
 // 좌석에 사람이 앉아있으면 1로, 좌석이 비어있으면 0으로 표현(비트마스크의 대전제)
-// 이외에 비트마스크의 응용인 원소 추가, 원소 삭제, 
+// 이외에 비트마스크의 응용인 원소 추가, 원소 삭제 등을 활용하자! 
 public class P_15787 {
 	public static void main(String[] args) throws IOException {
 		// 입력이 최대 100,000개이므로 BufferedReader 사용
