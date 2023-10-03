@@ -1,4 +1,4 @@
-package level_06_advanced1;
+package level_06_advanced;
 
 public class P_25083 {
 

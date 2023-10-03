@@ -1,4 +1,4 @@
-package level_19_combination;
+package level_19_combinatorics;
 
 import java.util.HashMap;
 import java.util.Map;

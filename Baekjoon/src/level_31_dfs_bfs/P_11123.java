@@ -3,6 +3,7 @@ package level_31_dfs_bfs;
 import java.util.Scanner;
 
 // 양 한마리... 양 두마리...
+// 깊이우선탐색(dfs)
 public class P_11123 {
 	private static int h, w, ans;
 	private static int[] dx = { -1, 1, 0, 0 };

@@ -1,4 +1,4 @@
-package level_23_dynamic_programming1;
+package level_23_dynamic_programming_easy;
 
 import java.util.Scanner;
 

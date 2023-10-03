@@ -91,20 +91,20 @@ public class P_1260 {
 	// bfs는 보통 큐로 구현(FIFO)
 	private static void bfs(int st) {
 		bvisited[st] = true; // 방문처리
-
+		
 		Queue<Integer> q = new LinkedList<>();
 		q.add(st);
 
 		while (!q.isEmpty()) {
 			// 현재 탐색중인 정점
 			int tmp = q.poll();
-			
+
 			for (int i : list[tmp]) {
 				// 방문하지 않았을 경우
 				if (bvisited[i] == false) {
 					q.add(i);
 					bsb.append(i + " ");
-					bvisited[i] = true;
+					bvisited[i] = true; // 방문처리
 				}
 
 			}

@@ -9,7 +9,7 @@ public class P_1018 {
 		int m = sc.nextInt(); // 행
 
 		// 체스판 입력
-		String board[] = new String[n];
+		String[] board = new String[n];
 		for (int i = 0; i < n; i++) {
 			board[i] = sc.next();
 		}
@@ -19,7 +19,7 @@ public class P_1018 {
 		int cnt2; // BWB
 
 		// 체스판은 8*8 사이즈이므로 배열 범위를 끝까지 순회할 필요가 없음
-		for (int i = 0; i < n - 7; i++)
+		for (int i = 0; i < n - 7; i++) {
 			for (int j = 0; j < m - 7; j++) {
 				cnt1 = 0;
 				cnt2 = 0;
@@ -55,7 +55,8 @@ public class P_1018 {
 					}
 				min = Math.min(min, Math.min(cnt1, cnt2)); // 최소 수정 횟수 저장
 			}
+		}
 		// 모든 경우의 최소 수정 횟수 출력
-		System.out.println(min); 
+		System.out.println(min);
 	}
 }
