@@ -1,4 +1,4 @@
-package level_00_bitmask;
+package level_99_bitmask;
 
 import java.util.Scanner;
 
