@@ -1,3 +1,4 @@
+package level_00_basic;
 import java.util.Scanner;
 
 // 테트로미노
