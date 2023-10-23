@@ -15,10 +15,10 @@ public class P_2502 {
     public static void main(String[] args) throws IOException {
     	BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
     	StringTokenizer st = new StringTokenizer(br.readLine());
-        int d = Integer.parseInt(st.nextToken());
-        int k = Integer.parseInt(st.nextToken());
+        int d = Integer.parseInt(st.nextToken()); // 넘어온 날
+        int k = Integer.parseInt(st.nextToken()); // 넘어온 날에 준 떡의 개수
 
-        // dp
+        // dp(계수)
         int[][] dp = new int[31][2];
 
         // 초기값 세팅
@@ -36,7 +36,7 @@ public class P_2502 {
             dp[i][1] = dp[i-1][1] + dp[i-2][1]; 
         }
 
-        // 전체 떡 준 개수 = 계수 * 하루마다 준 개수
+        // 전체 떡 준 개수 = 계수 * 하루마다 준 개수 (= n*a + m*b)
         // d번째 날의 떡의 개수(=== 계수)
         int n = dp[d][0]; // dp[d][0] = dp[d-1][0] + dp[d-2][0]
         int m = dp[d][1]; // dp[d][1] = dp[d-1][1] + dp[d-2][1]
