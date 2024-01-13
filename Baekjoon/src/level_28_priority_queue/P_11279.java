@@ -37,7 +37,7 @@ public class P_11279 {
 			// 앞에(o1)가 더 크면 바꿔주고 뒤에(o2)가 더 크면 그대로(기본값이 오름차순)
 			public int compare(Integer o1, Integer o2) {
 				return o2 - o1; // 내림차순
-//				return o2 - o1; // 오름차순
+//				return o1 - o2; // 오름차순
 			}
 		});
 
