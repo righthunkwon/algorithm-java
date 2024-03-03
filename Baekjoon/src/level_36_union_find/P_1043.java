@@ -1,4 +1,4 @@
-package level_31_dfs_bfs;
+package level_36_union_find;
 
 import java.io.BufferedReader;
 import java.io.IOException;
